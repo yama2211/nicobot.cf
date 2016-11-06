@@ -1,0 +1,10 @@
+.copy {
+	margin-top:5px;
+	text-align:center;
+}
+p.em{
+	color:red;
+	font-weight:bold;
+}
+em{	color:red;
+	font-weight:bold;}
