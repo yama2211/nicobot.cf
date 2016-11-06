@@ -8,3 +8,6 @@ p.em{
 }
 em{	color:red;
 	font-weight:bold;}
+.cent{
+    text-align:center;
+}
