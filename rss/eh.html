@@ -5,14 +5,14 @@
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <meta name="referrer" content="origin"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="./css/style.css">
-<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
-<link rel="stylesheet" type="text/css" href="./css/doc.css">
-<link rel="stylesheet" type="text/css" href="./css/bootstrap-social.css">
+<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<link rel="stylesheet" type="text/css" href="../../css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="../../css/doc.css">
+<link rel="stylesheet" type="text/css" href="../../css/bootstrap-social.css">
 <title>毎時ランキング-NicoBot</title>
 
-<script type="text/JavaScript" src="./js/jquery.min.js"></script>
+<script type="text/JavaScript" src="../../js/jquery.min.js"></script>
 <script type="text/javascript">
 $(function() {
     var setURL = 'http://www.nicovideo.jp/ranking/fav/hourly/all?rss=2.0&lang=ja-jp'; //feedのURL
@@ -95,7 +95,9 @@ var xmlOpen = function(_msg,_id,_num){
 </ol>
 <h1>毎時ランキング <small>RSSから取得</small></h1>
 <p>10位までを表示します。</p>
-
+<ul id="eh">
+<li>読み込み中</li>
+</ul>
 <hr>
 <div class="copy">&copy; 2016-2017 Nicobot<br>NicoNicoは「<a href="http://dwango.co.jp/">株式会社ドワンゴ</a>」が運営しています。<br><b>当サイト及びTwitterBotは有志により運営されています。</b></div>
   </div><!--col-xs-9-->
@@ -112,7 +114,7 @@ var xmlOpen = function(_msg,_id,_num){
   </div><!--row-->
   </div><!--jumbotron-->
   </div><!--container-->
-<script src="./js/jquery.min.js"></script>
-<script src="./js/bootstrap.js"></script>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.js"></script>
 </body>
 </html>
