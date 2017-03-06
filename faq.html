@@ -1,0 +1,113 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="referrer" content="origin"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="./css/doc.css">
+<link rel="stylesheet" type="text/css" href="./css/bootstrap-social.css">
+<title>NicoBot</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+$(function(){
+   // #で始まるアンカーをクリックした場合に処理
+   $('a[href^=#]').click(function() {
+      // スクロールの速度
+      var speed = 400; // ミリ秒
+      // アンカーの値取得
+      var href= $(this).attr("href");
+      // 移動先を取得
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      // 移動先を数値で取得
+      var position = target.offset().top;
+      // スムーススクロール
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+</script>
+</head>
+<body>
+<div class="container">
+<div class="jumbotron">
+  <div class="row">
+
+  <div class="col-md-8">
+<ol class="breadcrumb">
+  <li class="active"><span class="glyphicon glyphicon-home"></span> ホーム</li>
+</ol>
+<h1>FAQ</p>
+<p>FAQを書いておきます。よくある質問っぽいやつです。<br>スムーズスクロール対応</p>
+<hr>
+
+  <div class="panel panel-info" id="faq1">
+  <div class="panel-heading">Q:フォローしましたがフォローは帰ってきますか?</div>
+  <div class="panel-body">
+    <p>A:申し訳ありません。フォローは一切返しておりません。<br>また、今後も返す予定はありませんので予めご理解ください。</p>
+  </div>
+</div>
+
+  <div class="panel panel-info" id="faq2">
+  <div class="panel-heading">Q:botはどのようなシステムで動いていますか?</div>
+  <div class="panel-body">
+    <p>A:現在は https://dlvrit.com/ というサイトのシステムを用いています。</p>
+  </div>
+</div>
+
+  <div class="panel panel-info" id="faq3">
+  <div class="panel-heading">Q:RSSはどこから引用していますか?</div>
+  <div class="panel-body">
+    <p>A:http://www.nicovideo.jp/rss に公開されているものを使用しています。</p>
+  </div>
+</div>
+
+  <div class="panel panel-info" id="faq4">
+  <div class="panel-heading">Q:現在稼働しているbotは何ですか?</div>
+  <div class="panel-body">
+    <p>A:https://nicobot.cf/bot.txt にて確認できます。</p>
+  </div>
+</div>
+
+  <div class="panel panel-info" id="faq5">
+  <div class="panel-heading">Q:管理,運営しているのは誰ですか?</div>
+  <div class="panel-body">
+    <p>A:このTwitterBot及びWebサイトは非公開のprojectチーム(有氏によって)管理,運営しております。</p>
+  </div>
+</div>
+
+  <div class="panel panel-info" id="faq4">
+  <div class="panel-heading">上記以外の質問や問い合わせ</div>
+  <div class="panel-body">
+    <p>当ツイッターアカウントへDMをしていただくか<a href="mailto:contact@nicobot.cf">contact@nicobot.cf</a>にメールを送信してください。<br>
+    ※質問や問い合わせをいただいてから返信まで時間がかかる場合がります。1週間たっても返信がない場合は再度問い合わせください。これはDMでもメールでも同じです。<br>
+    ※上記メールアドレスは受信専用です。管理者からの返答はnicobot@neko2.netから送信されます。</p>
+  </div>
+</div>
+<hr>
+<div class="copy">&copy; 2016-2017 Nicobot<br>NicoNicoは「<a href="http://dwango.co.jp/">株式会社ドワンゴ</a>」が運営しています。<br><b>当サイト及びTwitterBotは有志により運営されています。</b></div>
+  </div><!--col-xs-9-->
+
+    <div class="col-md-4">
+
+  <div class="panel panel-default">
+  <div class="panel-heading">メニュー</div>
+  <div class="panel-body">
+    <p><a href="#faq1">「フォローしましたがフォローは帰ってきますか?」</a></p>
+    </p><a href="#faq2">「botはどのようなシステムで動いていますか?」</a></p>
+    </p><a href="#faq3">「RSSはどこから引用していますか?」</a></p>
+    </p><a href="#faq4">「現在稼働しているbotは何ですか?」</a></p>
+    </p><a href="#faq5">「管理,運営しているのは誰ですか?」</a></p>
+  </div>
+</div>
+  </div>
+  </div><!--row-->
+  </div><!--jumbotron-->
+  </div><!--container-->
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.js"></script>
+</body>
+</html>
